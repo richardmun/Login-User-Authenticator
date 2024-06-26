@@ -1,0 +1,179 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; /* Default rem size */
+}
+
+html, body {
+    min-height: 100vh;
+    position: relative;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    /*background-color: whitesmoke;*/
+    background-image: url(/appImages/grayGradient.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Overall container */
+#mainContainer {
+
+}
+
+
+
+#signUpContainer {
+    position: absolute;
+    width: 40rem;
+    height: 50rem;
+    background-color: white;
+    border-radius: 0.7rem;
+    top: 10rem; /* Moves away from top by (10rem * 10px = 100px) */
+    left: 50%; /* 50% positions container at equal distance of the containers width. */
+    transform: translateX(-50%); /* Achieve horizontal center. -50% move width towards left. */
+    display: grid;
+    grid-template-rows: 25% 10% 40% 25%;
+}
+
+.logo {
+    position: relative;
+}
+
+.logoContainer {
+    background-image: linear-gradient(black, #4285F4);
+    border-radius: 0.4rem;
+    position: absolute;
+    top: 3rem;
+    left: 9rem;
+}
+
+.logo img {
+    width: 20rem;
+    margin: 2rem 0 2rem 2rem;
+}
+
+.signUp {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signUp p {
+    padding-right: .8rem;
+}
+
+.signUp a {
+    color: #4285F4;
+}
+
+form {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form a {
+    color: #4285F4;
+}
+
+.inputBox {
+    width: 35rem;
+    height: 3rem;
+    background-color: whitesmoke;
+    border: 0.1rem solid lightgrey;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.inputBox:focus {  
+    outline: 0.1rem solid aqua;
+}
+
+.inputHeading {
+    font-size: 1.2rem;
+}
+
+.linkHeading {
+    font-size: 1.1rem;
+}
+
+.rememberMeSection {
+    margin: 1rem 0 1rem 0;
+}
+
+input[type="checkbox"] {
+    border: 0.1rem solid lightgrey;
+}
+
+.rememberMe {
+    font-size: 1.4rem;
+    margin: 0 0 0 1rem;
+}
+
+.logInButton {
+    color: lightgrey;
+    width: 35rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid lightgrey;
+}
+
+.logInButton:hover {
+    color: black;
+    border: 0.1rem solid aqua;
+}
+
+.externalSignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.googleSignIn {
+    background-color: #4285F4;
+    color: lightgray;
+    width: 35rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    margin: 2rem 0 2rem 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.SSOSignIn {
+    background-color: lightslategray;
+    width: 35rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkHeadingContainer {
+    margin-top: -1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.showPassword {
+    margin-left: 18rem;
+}
+

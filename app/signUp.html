@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/app/signUpStyles.css"> <!-- Refused to apply style from 'http://127.0.0.1:5500/app/app/signUpStyles.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled. * ALL I HAD TO DO WAS ADD A SLASH TO FIX THE DIRECTORY-->
+        <script src="signUp.js"></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="signUpContainer">
+                <div class="signUpHeading">
+                    <p>Create an Account</p>
+                </div>
+                <div class="signUpSubHeading">
+                    <p>Provide an email address and a password to sign up for an account.</p>
+                </div>
+                <form id="signUpForm" type="submit">
+                    <label class="newEmailHeading inputHeading">Email Address</label>
+                    <input class="newEmail inputBox" id="newEmail" type="text">
+                    <label class="newPasswordHeading inputHeading">New Password</label>
+                    <input class="newPassword inputBox" id="newPassword" type="text"> <!-- Need to cover char with asterisks -->
+                    <label class="confirmPasswordHeading inputHeading">Confirm New Password</label> <!-- Need to cover char with asterisks -->
+                    <input class="confirmPassword inputBox" id="confirmPassword" type="text">
+                    <button class="confirmRegistration" type="submit">Confirm Registration</button>
+                </form>
+            </div>
+    </body>
+</html>

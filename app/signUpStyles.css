@@ -1,0 +1,110 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; /* Default rem size */
+}
+
+html, body {
+    min-height: 100vh;
+    position: relative;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    /*background-color: whitesmoke;*/
+    background-image: url(/appImages/grayGradient.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overall container */
+#mainContainer {
+
+}
+
+
+#signUpContainer {
+    position: absolute;
+    width: 40rem;
+    height: 50rem;
+    background-color: white;
+    border-radius: 0.7rem;
+    top: 10rem; /* Moves away from top by (10rem * 10px = 100px) */
+    left: 50%; /* 50% positions container at equal distance of the containers width. */
+    transform: translateX(-50%); /* Achieve horizontal center. -50% move width towards left. */
+    display: grid;
+    grid-template-rows: 5% 10% 40% 25%;
+}
+
+.signUpHeading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.signUpSubHeading {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form a {
+    color: #4285F4;
+}
+
+.inputBox {
+    width: 35rem;
+    height: 3rem;
+    background-color: whitesmoke;
+    border: 0.1rem solid lightgrey;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.inputBox:focus {  
+    outline: 0.1rem solid aqua;
+}
+
+.inputHeading {
+    font-size: 1.2rem;
+}
+
+
+.confirmRegistration {
+    color: lightgrey;
+    width: 35rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid lightgrey;
+    margin-top: 1rem;
+}
+
+
+.confirmRegistration:hover {
+    color: black;
+    border: 0.1rem solid aqua;
+}
+
+
+
+
+
+
+
+
+
+
